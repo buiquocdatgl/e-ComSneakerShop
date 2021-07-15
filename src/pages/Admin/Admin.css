@@ -1,4 +1,127 @@
 .admin {
+  display: block;
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 1000px;
+  margin: auto;
+  width: 100%;
+  left: 7px;
   padding-left: 270px;
+}
+
+.admin .main_search {
+  padding: 10px;
+}
+
+.admin .main_search .form_search .search form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto;
+  z-index: 11;
+  border-radius: 5px;
+}
+
+/*----------input---------- */
+.admin .main_search .form_search .search .input_search {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.search .input_search .ant-form-item {
+  margin: 0;
+}
+
+.admin .main_search .form_search .search .input_search input.keyword_search {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 35px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  padding: 5px 8px;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background: none;
+  border: 1.1px solid #e8dfec;
+  color: #464646;
+  font-size: 14px;
+  font-weight: 300;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.admin
+.main_search
+.form_search
+.search
+.input_search
+input::-webkit-input-placeholder {
+  font-size: 13px;
+}
+
+.admin
+.main_search
+.form_search
+.search
+.input_search
+input:-ms-input-placeholder {
+  font-size: 13px;
+}
+
+.admin
+.main_search
+.form_search
+.search
+.input_search
+input::-ms-input-placeholder {
+  font-size: 13px;
+}
+
+.admin
+.main_search
+.form_search
+.search
+.input_search
+input::placeholder {
+  font-size: 13px;
+}
+
+.admin .ant-input:focus,
+.admin .ant-input-focused {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* --------------Responsive--------------- */
+@media screen and (max-width: 1000px) {
+  .admin {
+    display: block;
+    justify-items: center;
+    margin: auto;
+    left: 0;
+  }
+  .admin .main_search .form_search .search {
+    position: fixed;
+    line-height: 75px;
+    height: 75px;
+    background-color: #fdf9ff;
+    left: 0;
+    top: -300px;
+    padding: 20px 10px;
+    width: 100%;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: 15;
+  }
 }
 /*# sourceMappingURL=Admin.css.map */
