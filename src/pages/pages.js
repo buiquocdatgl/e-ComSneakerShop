@@ -1,6 +1,7 @@
 import {lazy} from 'react'
 const Home = lazy(() => import('../components/Layout/HomePage/HomePage'))
 const Admin = lazy(() => import('../pages/Admin/Admin'))
+const DetailProducts = lazy(()=>import('../pages/DetailProducts/DetailProduct'))
 
 const pages = [
     {
@@ -12,7 +13,12 @@ const pages = [
         path: '/Admin',
         exact: true,
         component: Admin
-    }
+    },
+    {
+        path: '/detail-product/',
+        exact: true,
+        component: DetailProducts
+    },
 
 ]
 
